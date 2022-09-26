@@ -1,0 +1,248 @@
+Test Suite(1):The Login Page
+      Test case(1) : Inter valid mail and password 
+               Expected Result = Login should be ok 
+               Actual Result = Login is ok
+               Test Result = pass 
+               Conditions / Inputs :
+                        Username = correct
+                        Password = correct
+               Test steps :
+                    1- In the addressbar type in the URL ,and Verify the user is redirected to the Landing page
+                    2- Click on Sign in and verify the user is redirected to the sign in page
+                    3- Type in the Valid Email address and valid password 
+                    4- Click on Log in and Verify the user is logged in successfully 
+
+Test Suite (2) : Home Page
+        Test case (1) : Search for a product
+                Expected Result : Product should be find successfully
+                Actual Result : Product found successfully
+                Test Result : pass
+                Conditions / Inputs :
+                          user must Enter a correct Product Name   
+                Test Steps :
+                     1- In the search Bar type in the required product and Verify the user is redirected to the page with the required search Category
+                     2- Click in the product you want and Verify the user is redirected to Detailed page of the product
+
+
+        Test Case (2) : Coupon Generation 
+                   Expected Result : Coupon will be generated Successfully 
+                   Actual Result : Coupon generated Successfully
+                   Test Result : pass
+                   Conditions / Inputs :
+                             User must Enter to Checkout page 
+                             User must Click on Generate Coupon Button
+                   Test Steps :
+                      1- In the search Bar type in the required product and Verify the user is redirected to the page with the required search Category
+                      2- Click on the product you want and Verify the user is redirected to Detailed page of the product
+                      3- Click on Add to cart and Verify the user is redirected to the Checkout page
+                      4- Click on Generate Coupon Button and Verify that a message is sent to the user mail address with the Coupon code
+
+
+       Test case (3) : Valid Coupon Code Entry (postive)
+                  Expected Result : Coupon code will be submitted Successfully 
+                  Actual Result : Coupon Code Submitted Successfully 
+                  Test Result :pass
+                  Conditions / Inputs :
+                               User must Enter Valid Coupon Code 
+                   Test Steps :
+                      1- In the search Bar type in the required product and Verify the user is redirected to the page with the required search Category
+                      2- Click on the product you want and Verify the user is redirected to Detailed page of the product
+                      3- Click on Add to cart and Verify the user is redirected to the Checkout page
+                      4- Click on Generate Coupon Button and Verify that a message is sent to the user mail address with the Coupon
+                      5- Ckeck for the email address and find the message for the Coupon details 
+                      6- Type in the Coupon code with the same format (e.g sent : SErty / Written : SErty) as sent in maiL , Click on apply and verify the Coupon code is Submitted successfully 
+
+
+      Test case (4) : Invalid Coupon code Entry (Negative)
+                  Expected Result : Coupon code will not be submitted  
+                  Actual Result : Coupon Code is not Submited  
+                  Test Result : pass
+                  Conditions / Inputs :
+                               User must Enter InValid Coupon Code 
+                  Test Steps :
+                      1- In the search Bar type in the required product and Verify the user is redirected to the page with the required search Category
+                      2- Click on the product you want and Verify the user is redirected to Detailed page of the product
+                      3- Click on Add to cart and Verify the user is redirected to the Checkout page
+                      4- Click on Generate Coupon Button and Verify that a message is sent to the user mail address with the Coupon
+                      5- Ckeck for the email address and find the message for the Coupon details 
+                      6- Type in the Coupon code with the different format( e.g sent : SErty / written : serty) from sent in maiL , Click on apply and verify the Coupon code is not Submitted 
+
+
+      Test Case (5) : Apply a preused Coupon code ( Configured to be used once )
+                  Expected Result : Coupon code will not be submitted  
+                  Actual Result : Coupon Code is not Submitted  
+                  Test Result : pass
+                  Conditions / Inputs :
+                               User must Enter preused Coupon Code 
+                  Test Steps :
+                      1- In the search Bar type in the required product and Verify the user is redirected to the page with the required search Category
+                      2- Click on the product you want and Verify the user is redirected to Detailed page of the product
+                      3- Click on Add to cart and Verify the user is redirected to the Checkout page
+                      4- Type in the preused Coupon code with the same format as sent in maiL , Click on apply and verify the Coupon code is not Submitted 
+                 
+      Test case (6) : Apply a preused Coupon code ( Configured to be used 6 times )
+                 Expected Result : Coupon code will be submitted Successfully 
+                 Actual Result : Coupon Code Submitted Successfully 
+                 Test Result : pass
+                 Conditions / Inputs :
+                               User must Enter preused Coupon Code ( used from 1 to 5 times) 
+                 Test Steps :
+                      1- In the search Bar type in the required product and Verify the user is redirected to the page with the required search Category
+                      2- Click on the product you want and Verify the user is redirected to Detailed page of the product
+                      3- Click on Add to cart and Verify the user is redirected to the Checkout page
+                      4- Type in the preused Coupon code with the same format as sent in maiL , Click on apply and verify the Coupon code is  Submitted successfully
+
+
+     Test case (7) : Apply a Coupon code in valid date range ( Configured to be used from ( 1/1/2022 to 10/1/2022))
+                 Expected Result : Coupon code will be submitted Successfully 
+                 Actual Result : Coupon Code Submitted Successfully 
+                 Test Result : pass
+                 Conditions / Inputs :
+                               User must Enter Coupon Code in days date range [1/1/2022 ==> 10/1/2022]
+                 Test Steps :
+                      1- In the search Bar type in the required product and Verify the user is redirected to the page with the required search Category
+                      2- Click on the product you want and Verify the user is redirected to Detailed page of the product
+                      3- Click on Add to cart and Verify the user is redirected to the Checkout page
+                      4- Click on Generate Coupon Button in day (1/1/2022) and Verify that a message is sent to the user mail address with the Coupon
+                      5- Ckeck for the email address and find the message for the Coupon details 
+                      6- Type in the Coupon code in day (5/1/2022 ) with the same format as sent in maiL , Click on apply and verify the Coupon code is Submitted successfully
+
+    Test case (8) : Apply a Coupon code in Invalid date range ( Configured to be used from ( 1/1/2022 to 10/1/2022))
+                  
+                 Expected Result : Coupon code will not be submitted  
+                 Actual Result : Coupon Code is not Submited  
+                 Test Result : pass
+                 Conditions / Inputs :
+                               User must Enter Coupon Code in days out of date range [1/1/2022 ==> 10/1/2022]
+                 Test Steps :
+                      1- In the search Bar type in the required product and Verify the user is redirected to the page with the required search Category
+                      2- Click on the product you want and Verify the user is redirected to Detailed page of the product
+                      3- Click on Add to cart and Verify the user is redirected to the Checkout page
+                      4- Click on Generate Coupon Button in day (1/1/2022) and Verify that a message is sent to the user mail address with the Coupon
+                      5- Ckeck for the email address and find the message for the Coupon details 
+                      6- Type in the Coupon code in day (11/1/2022 ) with the same format as sent in maiL , Click on apply and verify the Coupon code is not Submited 
+
+    Test case (9) : Apply a Coupon code ( Configured to be alawys valid within any date range )
+                 Expected Result : Coupon code will be submitted Successfully 
+                 Actual Result : Coupon Code Submitted Successfully 
+                 Test Result : pass
+                 Conditions / Inputs :
+                               User must Enter Coupon Code at any time with any date
+                 Test Steps :
+                      1- In the search Bar type in the required product and Verify the user is redirected to the page with the required search Category
+                      2- Click on the product you want and Verify the user is redirected to Detailed page of the product
+                      3- Click on Add to cart and Verify the user is redirected to the Checkout page
+                      4- Click on Generate Coupon Button in day (1/1/2022) and Verify that a message is sent to the user mail address with the Coupon
+                      5- Ckeck for the email address and find the message for the Coupon details 
+                      6- Type in the Coupon code in days (11/1/2022 - 5/5/2022 - 10/10/2022 - 31/12/2022 ) with the same format as sent in maiL , Click on apply and verify the Coupon code is Submitted successfully
+
+
+    Test case (10) : Apply a Coupon code in valid plan range ( Configured to work on products price range from [ 1000 $ ==> 2000 $ ] )
+                 Expected Result : Coupon code will be submitted Successfully 
+                 Actual Result : Coupon Code Submitted Successfully 
+                 Test Result : pass
+                 Conditions / Inputs :
+                               User must Enter Coupon Code for product price [ 1000$ ==> 2000$ ]
+                 Test Steps :
+                      1- In the search Bar type in the required product and Verify the user is redirected to the page with the required search Category
+                      2- Click on the product with price ( 1500 $ )  and Verify the user is redirected to Detailed page of the product
+                      3- Click on Add to cart and Verify the user is redirected to the Checkout page 
+                      4- Type in the Coupon code  with the same format as sent in maiL , Click on apply and verify the Coupon code is Submitted successfully
+
+
+    Test case (11 ) : Apply a coupon code( Configured to work on products price range from [ 1000 $ ==> 2000 $ ] ) for invalid product price
+                 Expected Result : Coupon code will notbe submitted 
+                 Actual Result : Coupon Code is not Submitted  
+                 Test Result : pass
+                 Conditions / Inputs :
+                               User must Enter Coupon Code for product price [ 1$ ==>999$ , 2001$ ==> to up ]
+                 Test Steps :
+                      1- In the search Bar type in the required product and Verify the user is redirected to the page with the required search Category
+                      2- Click on the product with price ( 400 $ )  and Verify the user is redirected to Detailed page of the product
+                      3- Click on Add to cart and Verify the user is redirected to the Checkout page
+                      4- Type in the Coupon code  with the same format as sent in maiL , Click on apply and verify the Coupon code is not Submitted 
+                
+
+   Test case (12) : Apply a coupon code ( Configured to make 40 EGP discount )
+
+               Expected Result : Coupon code will decrade total price by 40 EGP
+               Actual Result : Coupon code decrades total price by 40 EGP
+               Test Result : pass
+               Conditions /Inputs : 
+                             User musr Enter valid Coupon code
+               Test steps :
+                      1- In the search Bar type in the required product and Verify the user is redirected to the page with the required search Category
+                      2- Click on the product you want ( with price e.g : 600 $ ) and Verify the user is redirected to Detailed page of the product
+                      3- Click on Add to cart and Verify the user is redirected to the Checkout page
+                      4- Click on Generate Coupon Button  and Verify that a message is sent to the user mail address with the Coupon
+                      5- Ckeck for the email address and find the message for the Coupon details 
+                      6- Type in the Coupon code  with the same format as sent in maiL , Click on apply and verify the Coupon code is Submitted successfully with final product price ( 560 $ )
+
+
+
+    Test case (13) : Apply a coupon code ( Configured to make 7% discount )
+
+               Expected Result : Coupon code will decrade total price by 7% off
+               Actual Result : Coupon code  decrades total price by 7% off
+               Test Result : pass
+               Conditions /Inputs : 
+                             User musr Enter valid Coupon code
+               Test steps :
+                      1- In the search Bar type in the required product and Verify the user is redirected to the page with the required search Category
+                      2- Click on the product you want ( with price e.g : 600 $ ) and Verify the user is redirected to Detailed page of the product
+                      3- Click on Add to cart and Verify the user is redirected to the Checkout page
+                      4- Click on Generate Coupon Button  and Verify that a message is sent to the user mail address with the Coupon
+                      5- Ckeck for the email address and find the message for the Coupon details 
+                      6- Type in the Coupon code  with the same format as sent in maiL , Click on apply and verify the Coupon code is Submitted successfully with final product price ( 558 $ )
+
+
+   Test case (14) : Apply a deactivated Coupon code ( ( Configured to be used from ( 1/5/2022 to 10/5/2022))
+                 Expected Result : Coupon code will be not submitted  
+                 Actual Result : Coupon Code is not Submitted  
+                 Test Result : pass
+                 Conditions / Inputs :
+                               User must Enter Coupon Code in days range [1/5/2022 ==> 10/5/2022]
+                 Test Steps :
+                      1- In the search Bar type in the required product and Verify the user is redirected to the page with the required search Category
+                      2- Click on the product you want and Verify the user is redirected to Detailed page of the product
+                      3- Click on Add to cart and Verify the user is redirected to the Checkout page
+                      4- Click on Generate Coupon Button in day (1/5/2022) and Verify that a message is sent to the user mail address with the Coupon
+                      5- Ckeck for the email address and find the message for the Coupon details 
+                      6- Type in the Coupon code in day (5/5/2022 ) with the same format as sent in maiL , Click on apply and verify the Coupon code is not Submitted 
+
+   Test case (15): Deletion of preused Coupon code 
+               Expected Result : Coupon code could not be deleted
+               Actual Result : Coupon code is not deleted
+               Conditions / Inputs :
+                          Delete a preused Coupon code 
+
+               Test Steps :
+                     1- Populate to the configuration page
+                     2- Scroll to Creation and deletion of Coupon
+                     3- Click on delete a Coupon an Verify the deletion process does not occur 
+ 
+
+
+
+
+    Test case (16) : Product Checkout 	
+                Expected Result : User Should Checkout Successfully
+                Actual Result : User Checkout Successfully
+                Test Result : Pass
+                Conditions /Inputs :
+                             User must Enter a valid Mail and Password
+                             User must type in all mandatory fields ( e.g : First name - Last name - Country - ......)
+                             User must Type in valid ( Credit card number - Expiration date - CVC )
+                 Test Steps :
+                      1- In the search Bar type in the required product and Verify the user is redirected to the page with the required search Category
+                      2- Click on the product you want and Verify the user is redirected to Detailed page of the product
+                      3- Click on Add to cart and Verify the user is redirected to the Checkout page
+                      4- Click on Generate Coupon Button and Verify that a message is sent to the user mail address with the Coupon
+                      5- Ckeck for the email address and find the message for the Coupon details 
+                      6- Type in the Coupon code and click Apply 
+                      7- Click proceed to Checkout and verify the user is redirected to checkout page
+                      8- Fill in the mandatory fields , type in the credit card number info , click pay and verify the user get a confirmation message of successful Checkout
+                             
+                
+
+
