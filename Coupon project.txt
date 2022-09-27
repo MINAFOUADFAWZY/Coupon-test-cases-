@@ -1,5 +1,5 @@
 Test Suite(1):The Login Page
-      Test case(1) : Inter valid mail and password 
+      Test case(1) : Enter valid mail and password 
                Expected Result = Login should be ok 
                Actual Result = Login is ok
                Test Result = pass 
